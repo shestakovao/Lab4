@@ -21,8 +21,24 @@ namespace Task2
                 if (currentNumber > 0) { countPluse++; }
             }
             while (currentNumber != 0);
-            Console.WriteLine("Количество отрицательных чисел {0} количество положительных {1}",countMinus,countPluse);
-            Console.ReadKey();  
+            Console.WriteLine("Количество отрицательных чисел {0} количество положительных {1}", countMinus, countPluse);
+
+            if (countMinus == countPluse)
+            {
+                Console.WriteLine("Количество отрицательных чисел равно количеству положительных");
+            }
+            else
+            {
+                if (countMinus < countPluse)
+                { 
+                    Console.WriteLine("Количество отрицательных чисел меньше количества положительных"); 
+                }
+                else
+                { 
+                    Console.WriteLine("Количество отрицательных чисел больше количества положительных"); 
+                }
+            }
+            Console.ReadKey();
         }
     }
 }
